@@ -1,7 +1,7 @@
 :root {
   --ink: #25233a;
   --muted: #77758a;
-  --pink: #ff6389;
+  --pink: #6385ff;
   --yellow: #ffd65a;
   --purple: #8a72d6;
   --cream: #fffaf3;
@@ -1286,5 +1286,63 @@ h2 em {
 
   .product-image {
     height: 250px;
+  }
+}
+
+.galeri-paket {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 25px 20px;
+}
+
+.galeri-paket[hidden] {
+  display: none;
+}
+
+.galeri-paket h2 {
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.galeri-paket > p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.daftar-paket {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.kartu-paket {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+}
+
+.kartu-paket img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.kartu-paket h3 {
+  margin: 15px 0;
+}
+
+.kartu-paket .product-button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .daftar-paket {
+    grid-template-columns: 1fr;
   }
 }

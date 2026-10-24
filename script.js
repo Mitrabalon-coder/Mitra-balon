@@ -31,3 +31,27 @@ const whatsappLink = document.getElementById("whatsappLink");
 if (whatsappLink) {
   whatsappLink.href = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
 }
+
+function bukaGaleri(id) {
+  const galeri = document.getElementById(id);
+
+  if (!galeri) return;
+
+  galeri.hidden = false;
+  galeri.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+}
+
+function tutupGaleri() {
+  const galeri = document.getElementById("galeri-dekorasi");
+
+  if (!galeri) return;
+
+  galeri.hidden = true;
+  document.querySelector(".product-card")?.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+  });
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Galeri Balon Dekorasi - MITRA BALON</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      .halaman-galeri {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      .galeri-header {
+        text-align: center;
+        margin: 30px 0;
+      }
+
+      .galeri-header h1 {
+        font-size: 32px;
+        color: #222;
+      }
+
+      .galeri-header p {
+        color: #666;
+      }
+
+      .grid-paket {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .kartu-paket {
+        overflow: hidden;
+        border: 1px solid #eee;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+      }
+
+      .kartu-paket img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .info-paket {
+        padding: 18px;
+      }
+
+      .info-paket h3 {
+        margin-top: 0;
+      }
+
+      .info-paket p {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .tombol-pesan {
+        display: block;
+        background: #20bd67;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px;
+        border-radius: 8px;
+        margin-top: 16px;
+      }
+
+      .tombol-kembali {
+        display: inline-block;
+        color: #222;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        padding: 10px 15px;
+        border-radius: 8px;
+      }
+
+      @media (max-width: 700px) {
+        .grid-paket {
+          grid-template-columns: 1fr;
+        }
+
+        .galeri-header h1 {
+          font-size: 26px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="halaman-galeri">
+      <a class="tombol-kembali" href="./index.html"> ← Kembali ke Produk </a>
+
+      <header class="galeri-header">
+        <h1>Galeri Balon Boneka Agin</h1>
+        <p>Pilih paket dekorasi yang kamu inginkan.</p>
+      </header>
+
+      <div class="grid-paket">
+        <!-- PAKET 1 -->
+        <article class="kartu-paket">
+          <img
+            src="./gambar/Balon boneka angin 1.jpeg"
+            alt="Paket balon boneka angin 1"
+          />
+
+          <div class="info-paket">
+            <h3>Paket Balon boneka angin 1</h3>
+            <p>Inspirasi dekorasi untuk acara spesial.</p>
+
+            <a
+              class="tombol-pesan"
+              href="https://wa.me/6281288579450?text=Halo%20MITRA%20BALON%2C%20saya%20tertarik%20Paket%20Balon%20Dekorasi%201"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pesan Paket Ini ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PAKET 2 -->
+        <article class="kartu-paket">
+          <img
+            src="./gambar/Balon Boneka angin.jpeg"
+            alt="Paket balon Angin 2"
+          />
+
+          <div class="info-paket">
+            <h3>Paket Balon Dekorasi 2</h3>
+            <p>Pilihan dekorasi untuk berbagai acara.</p>
+
+            <a
+              class="tombol-pesan"
+              href="https://wa.me/6281288579450?text=Halo%20MITRA%20BALON%2C%20saya%20tertarik%20Paket%20Balon%20Dekorasi%202"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pesan Paket Ini ↗
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
